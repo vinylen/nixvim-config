@@ -49,7 +49,6 @@
           }
           { name = "nvim_lua"; }
           { name = "path"; }
-          # { name = "copilot"; }
         ];
 
         formatting = {
@@ -96,7 +95,6 @@
                   Calendar = "",
                   Watch = "󰥔",
                   Package = "",
-                  # Copilot = "",
                   Codeium = "",
                   TabNine = "",
                 }
