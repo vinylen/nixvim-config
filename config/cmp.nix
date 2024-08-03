@@ -1,24 +1,7 @@
 # # Source: https://github.com/hmajid2301/dotfiles/blob/ab7098387426f73c461950c7c0a4f8fb4c843a2c/home-manager/editors/nvim/plugins/coding/cmp.nix
 {
   plugins = {
-    luasnip.enable = true;
-    # copilot-lua = {
-    #   enable = true;
-    #   suggestion.enabled = false;
-    #   panel.enabled = false;
-    #   filetypes = {
-    #     yaml = false;
-    #     markdown = false;
-    #     help = false;
-    #     gleam = false; # Copilot doesn't really help when writing Gleam
-    #     gitcommit = false;
-    #     gitrebase = false;
-    #     hgcommit = false;
-    #     svn = false;
-    #     cvs = false;
-    #     "." = false;
-    #   };
-    # };
+    luasnip.enable = false;
 
     cmp-buffer = { enable = true; };
 
