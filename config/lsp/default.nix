@@ -3,15 +3,11 @@
     lsp = {
       enable = true;
       servers = {
+        ansiblels.enable = true;
         bashls.enable = true;
-        clangd.enable = true;
-        elixirls.enable = true;
-        gleam.enable = true;
         gopls.enable = true;
-        kotlin-language-server.enable = true;
         nixd.enable = true;
-        prolog-ls.enable = true;
-        ruff-lsp.enable = true;
+        ruff-lsp.enable = true; #python
       };
       keymaps.lspBuf = {
         "gd" = "definition";
@@ -21,6 +17,6 @@
         "K" = "hover";
       };
     };
-    rust-tools.enable = true;
+    rust-tools.enable = false;
   };
 }
