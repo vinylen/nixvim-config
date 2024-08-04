@@ -1,5 +1,6 @@
 {
   imports = [
+    ./autocommands.nix
     ./bufferline.nix
     ./cmp.nix
     ./extras/nvim-ansible.nix
@@ -26,9 +27,9 @@
 
   diagnostics = { virtual_lines.only_current_line = true; };
 
-  extraConfigVim = ''
-    autocmd BufRead,BufNewFile *.pl set filetype=prolog
-  '';
+  # extraConfigVim = ''
+  #   autocmd BufRead,BufNewFile *.pl set filetype=prolog
+  # '';
 
   globals.mapleader = " ";
   keymaps = [
