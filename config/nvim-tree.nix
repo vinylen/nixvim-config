@@ -1,7 +1,7 @@
 {
   plugins.nvim-tree = {
     enable = true;
-    openOnSetupFile = true;
+    openOnSetup = true;
     autoReloadOnWrite = true;
   };
 }
