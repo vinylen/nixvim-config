@@ -3,6 +3,7 @@
     ./autocommands.nix
     ./bufferline.nix
     ./cmp.nix
+    ./extras/markview.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix

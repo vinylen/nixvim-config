@@ -4,6 +4,7 @@
       enable = true;
       nixGrammars = true;
       settings.indent.enable = true;
+      folding = true;
     };
     treesitter-context = {
       enable = true;
