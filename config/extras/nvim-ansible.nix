@@ -7,7 +7,7 @@
         owner = "mfussenegger";
         repo = "nvim-ansible";
         rev = "main";
-        sha256 = "";
+        sha256 = "sha256-9sEfmX3FTvUB4gaMqCQ/bPgyu8ryvRfJc1M8IBXipgY=";
       };
     })
   ];
