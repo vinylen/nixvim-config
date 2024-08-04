@@ -6,14 +6,7 @@
       command = "norm zz";
     }
 
-    # Open help in a vertical split
-    {
-      event = "FileType";
-      pattern = "help";
-      command = "wincmd L";
-    }
-
-    # Enable spellcheck for some filetypes
+    # Autoload ansible-lint lsp for ansible files
     {
       event = [
         "BufRead"

@@ -3,7 +3,6 @@
     ./autocommands.nix
     ./bufferline.nix
     ./cmp.nix
-    ./extras/nvim-ansible.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
