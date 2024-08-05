@@ -12,6 +12,7 @@
     ./lsp/none-ls.nix
     ./lsp/trouble.nix
     ./nvim-tree.nix
+    ./neo-tree.nix
     ./options.nix
     ./treesitter.nix
     ./utils/auto-pairs.nix
