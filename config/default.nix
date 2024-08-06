@@ -38,7 +38,7 @@
     # Default mode is "" which means normal-visual-op
     {
       key = "<C-n>";
-      action = "<CMD>NvimTreeToggle<CR>";
+      action = "<CMD>NeoTree<CR>";
       options.desc = "Toggle NvimTree";
     }
     {
