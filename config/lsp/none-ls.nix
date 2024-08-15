@@ -7,6 +7,7 @@
         golangci_lint.enable = true;
         ktlint.enable = true;
         statix.enable = true;
+        terraform_validate.enable = true;
       };
       formatting = {
         fantomas.enable = true;
@@ -18,6 +19,7 @@
         markdownlint.enable = true;
         shellharden.enable = true;
         shfmt.enable = true;
+        terraform_fmt.enable = true;
       };
     };
   };
