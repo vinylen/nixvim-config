@@ -8,6 +8,7 @@
         gopls.enable = true;
         nixd.enable = true;
         ruff-lsp.enable = true; #python
+        terraformls.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
