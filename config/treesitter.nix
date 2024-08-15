@@ -5,6 +5,12 @@
       nixGrammars = true;
       settings.indent.enable = true;
       folding = false;
+      settings = {
+        ensure_installed = [
+          "terraform"
+          "hcl"
+        ];
+      };
     };
     treesitter-context = {
       enable = true;
