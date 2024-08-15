@@ -6,6 +6,10 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
+
   outputs = { self, nixpkgs, nixvim, flake-utils, ... }@inputs:
     let config = import ./config; # import the module directly
     in flake-utils.lib.eachDefaultSystem (system:
