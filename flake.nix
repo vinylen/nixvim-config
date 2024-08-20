@@ -7,14 +7,20 @@
   };
 
   outputs = { self, nixpkgs, nixvim, flake-utils, ... }@inputs:
-    let config = import ./config; # import the module directly
+    let
+      config = import ./config; # import the module directly
     in flake-utils.lib.eachDefaultSystem (system:
       let
+        # Extend pkgs to allow unfree packages
+        pkgsWithUnfree = import inputs.nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        }; 
         nixvimLib = nixvim.lib.${system};
-        pkgs = import nixpkgs { inherit system; };
+        # pkgs = import nixpkgs { inherit system; };
         nixvim' = nixvim.legacyPackages.${system};
         nvim = nixvim'.makeNixvimWithModule {
-          inherit pkgs;
+          pkgs = pkgsWithUnfree;
           module = config;
         };
       in
@@ -33,6 +39,6 @@
           default = nvim;
         };
 
-        devShells.default = import ./shell.nix { inherit pkgs; };
+        devShells.default = import ./shell.nix { inherit pkgsWithUnfree; };
       });
 }
